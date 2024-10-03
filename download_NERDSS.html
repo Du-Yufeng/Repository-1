@@ -39,7 +39,7 @@
 
 							<!-- Logo -->
 							<a href="index.html" class="logo">
-								<span class="symbol"><img src="images/NERDSSicon.png" alt="" /></span><span class="title">NERDSS</span>
+								<span class="symbol"><img src="images/logo_design.png" alt="" /></span>
 							</a>
 
 							<!-- Nav -->
@@ -62,7 +62,7 @@
 							<li><a href="#">Articles</a></li>
 							<li><a href="#">News</a></li>
 							<li><a href="#">For Developers</a></li>
-							<li><a href="#">User Forum</a></li>
+							<li><a href="https://github.com/Du-Yufeng/Repository-1/discussions">User Forum</a></li>
 						</ul>
 					</nav>
 
@@ -71,16 +71,39 @@
 						<div class="inner">
 							<h1>Download NERDSS</h1>
 							<span class="image main"><img src="images/download_NERDSS_picture1.png" alt="" /></span>
-							<p>Download NERDSS for free (use botton)<a href="Temporal control by cofactors prevents kinetic trapping in retroviral Gag lattice assembly.zip" download onclick="gtag('event', 'download', { 'event_category': 'PDFs', 'event_label': 'File.pdf' });">here </a>.</p>
 							<section>
-								<div class="row">
-									<div class="col-6 col-12-medium">
-										<h3>NERDSS is compatible with:</h3>
-										<ul>
-											<li>Linux</li>
-											<li>MacOS</li>
-											<li>Windows Subsystem for Linux (WSL)</li>
-										</ul>
+								<h3><a href="files/NERDSS.zip" download onclick="gtag('event', 'download', { 'event_category': 'PDFs', 'event_label': 'File.pdf' });" class="button primary fit">Download NERDSS for free</a></h3>
+							</section>
+							<section>
+								<div class="inner">
+									<div class="inner">
+										<div class="col-6 col-12-medium">
+											<h2>Installation instructions:</h2>
+											<p>NERDSS is compatible with:</br>
+											    <span style="margin-left: 40px;">Linux</span></br>
+												<span style="margin-left: 40px;">MacOS</span></br>
+												<span style="margin-left: 40px;">Windows Subsystem for Linux (WSL)</span></br>
+											<p>To build NERDSS, you need:</br>
+
+												<span style="margin-left: 40px;">a. A C++ compiler:</span></br>
+													<span style="margin-left: 80px;">- For macOS, install XCode</span></br>
+													<span style="margin-left: 80px;">- For Ubuntu, install a compiler through apt</span></br>
+													<span style="margin-left: 40px;">b. GNU Scientific Library (GSL) version 1.0 or higher:</span></br>
+													<span style="margin-left: 80px;">- For macOS, install via Homebrew</span></br>
+													<span style="margin-left: 80px;">- For Ubuntu, install via apt</span></br>
+											<p>1. Click the button above to download NERDSS</p>
+											<p>2. Unzip the downloaded file</p>
+											<p>3. Open a terminal and navigate to the unzipped NERDSS. directory</p>
+											<p>4. Run the following command to build NERDSS:</p>
+											<pre><code>make serial</code></pre>
+											<p>4'. If you wish to build faster, or are having issues building NERDSS using the command above, you can try using cmake alternatively:
+											<pre><code>mkdir build
+cd build
+cmake ..
+make //(may use j flag to specify number of cores to use)</code></pre>
+											</p>
+											<p>5. The NERDSS Executable will be in the /build directory</p>
+										</div>
 									</div>
 								</div>
 							</section>
